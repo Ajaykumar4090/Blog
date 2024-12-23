@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #3498db;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header p {
+    color: #2c3e50;
+}
+
+nav {
+    background-color: #3498db;
+    border-top: 1px solid #2c3e50;
+}
+
+nav ul {
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.blog_main_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    color: #2c3e50;
+    gap: 10px;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.blog_card_section {
+    flex: 1 1 calc(50% - 20px); 
+    max-width: 460px;
+    background-color: #f4f4f9;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.blog_card_section h2{
+    color: #2ecc71;
+    padding: 5px 0;
+    border-bottom: 1px solid #2ecc71;
+}
+.blog_card_section h3{
+    color: #3498db;
+    padding: 5px 0;
+}
+.blog_card_section ul{
+    padding: 10px;
+}
+
+.blog_main_section .blog_card_section video,
+img {
+    width: 100%;
+    height: auto;
+    transition: .3s;
+}
+
+img:hover {
+    scale: 0.9;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    color: #2c3e50;
+}
+.about-me h2{
+    color: #3498db;
+    border-bottom: 1px solid #3498db;
+}
+
+.about-me article {
+    flex: 1 1 calc(100% - 20px); 
+    max-width: 728px;
+    background-color: #f4f4f9;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-me article h2,
+p {
+    padding: 10px 0;
+    margin: 5px 0;
+}
+
+.about-me article input,
+textarea {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; 
+}
+
+.about-me button {
+    padding: 10px 20px;
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+    color: #fff;
+    background-color: #3498db;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+
+.about-me button:hover {
+    background-color: #3495dbc9;
+    color: #f4f4f9;
+    transition: .3s;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #3498db;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .blog_main_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog_card_section {
+        width: 100%; 
+    }
+
+    .about-me article {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 5px;
+    }
+}
