@@ -15,10 +15,12 @@ header h1 {
     font-size: 2.5rem;
     color: #fff;
     text-transform: uppercase;
+    text-shadow: 5px 3px 3px #2c3e50;
 }
 
 header p {
     color: #2c3e50;
+    font-weight: 600;
 }
 
 nav {
@@ -43,6 +45,10 @@ nav ul li a {
     text-transform: uppercase;
 }
 
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
 .blog_main_section {
     display: flex;
     flex-wrap: wrap;
@@ -51,17 +57,14 @@ nav ul li a {
     gap: 10px;
 }
 
-nav ul li a:hover{
-    text-decoration: underline;
-}
-
 .blog_card_section {
     flex: 1 1 calc(50% - 20px); 
-    max-width: 460px;
+    max-width: 470px;
     background-color: #f4f4f9;
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px #2c3e50;
 }
 .blog_card_section h2{
     color: #2ecc71;
@@ -107,6 +110,7 @@ img:hover {
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px #2c3e50;
 }
 
 .about-me article h2,
@@ -123,6 +127,17 @@ textarea {
     border-radius: 5px;
     font-size: 16px;
     width: 100%; 
+    font-weight: bold;
+    color: #2c3e50;
+}
+.about-me article input:hover{
+    background-color: #2c3e50;
+    color: white;
+}
+
+.about-me article textarea:hover{
+    background-color: #2c3e50;
+    color: white;
 }
 
 .about-me button {
@@ -136,6 +151,7 @@ textarea {
     background-color: #3498db;
     text-transform: uppercase;
     letter-spacing:1px;
+    box-shadow: 5px 5px 5px #2c3e50;
 }
 
 .about-me button:hover {
@@ -155,6 +171,9 @@ footer {
 footer a{
     text-decoration: none;
     color: #fff;
+}
+footer a:visited{
+    color: #2c3e50;
 }
 
 /* Responsive Design */
