@@ -21,6 +21,7 @@ header h1 {
 header p {
     color: #2c3e50;
     font-weight: 600;
+    padding:10px;
 }
 
 nav {
@@ -84,6 +85,8 @@ img {
     width: 100%;
     height: auto;
     transition: .3s;
+    border-radius: 10px;
+    box-shadow: -3px -3px 5px #2c3e50;
 }
 
 img:hover {
@@ -187,9 +190,9 @@ footer a:visited{
         align-items: center;
     }
 
-    .blog_card_section {
+    /* .blog_card_section {
         width: 100%; 
-    }
+    } */
 
     .about-me article {
         width: 100%;
