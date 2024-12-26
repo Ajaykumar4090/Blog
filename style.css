@@ -175,9 +175,9 @@ footer a{
     text-decoration: none;
     color: #fff;
 }
-/* footer a:visited{
-    color: #2c3e50;
-} */
+footer a:hover{
+    text-decoration: underline;
+}
 
 /* Responsive  */
 @media (max-width: 768px) {
