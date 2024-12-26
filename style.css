@@ -44,10 +44,12 @@ nav ul li a {
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
+    transition: .5s;
 }
 
 nav ul li a:hover{
     text-decoration: underline;
+    color: #2c3e50;
 }
 
 .blog_main_section {
@@ -170,6 +172,7 @@ footer {
     color: #fff;
     margin-top: 20px;
     width: 100%;
+    transition: .5s;
 }
 footer a{
     text-decoration: none;
@@ -177,6 +180,7 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
+    color: #2c3e50;
 }
 
 /* Responsive  */
